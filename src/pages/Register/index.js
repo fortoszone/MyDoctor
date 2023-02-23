@@ -2,10 +2,10 @@ import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import {Header, Input, Button, Gap} from '../../components';
 
-export default function Register() {
+export default function Register({navigation}) {
   return (
     <View>
-      <Header title={'Register'} />
+      <Header title={'Daftar Akun'} onPress={() => navigation.goBack()} />
       <View style={styles.page}>
         <Input label={'Full Name'} />
         <Gap height={24} />
