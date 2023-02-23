@@ -1,5 +1,5 @@
 import React from 'react';
-import {Splash, GetStarted, Register, Login} from '../pages';
+import {Splash, GetStarted, Register, Login, UploadPhoto} from '../pages';
 const {createNativeStackNavigator} = require('@react-navigation/native-stack');
 
 const Stack = createNativeStackNavigator();
@@ -25,6 +25,11 @@ function Router() {
       <Stack.Screen
         name="Login"
         component={Login}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="UploadPhoto"
+        component={UploadPhoto}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
